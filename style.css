@@ -67,5 +67,12 @@ a:hover {
   z-index: 1;
 }
 
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20em;
+}
+
 @media screen {
 }
