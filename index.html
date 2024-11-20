@@ -16,54 +16,104 @@
 <body>
     <main>
         <header>
-            <img id="header-img" src="logo.png" alt="Google Logo">
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#video">Video</a></li>
-                    <li><a class="nav-link" href="#container-overview">Overview</a></li>
-                    <li><a class="nav-link" href="#container-tech-specs">Tech Specs</a></li>
-                    <li><a class="nav-link" href="#form-buy">Buy Now</a></li>
-
-                </ul>
-            </nav>
+            <div class="header">
+                <img class="header-img" id="header-img" src="logo.png" alt="Google Logo">
+                <nav class="nav-bar" id="nav-bar">
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="#video">Video</a></li>
+                        <li><a class="nav-link" href="#container-overview">Overview</a></li>
+                        <li><a class="nav-link" href="#container-tech-specs">Tech Specs</a></li>
+                        <li><a class="nav-link" href="#form-buy">Buy Now</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <!--Hero Section-->
-        <div id="hero-section">
-            <div>
-                Put Fitbit Description Here
+        <div class="hero-section" id="hero-section">
+            <div class="hero-section-text" id="hero-section-text">
+                <h1 class="hero-section-header-1">Run your day and routine.</h1>
             </div>
-            <div>
-                <img src="fitbits.png" alt="Fitbits">
+            <div class="hero-section-img">
+                <img id="hero-section-img" src="fitbits.png" alt="Fitbits">
             </div>
         </div>
-        <!--Hero Section-->
 
         <!--Video-->
-        <div id="video">
+        <div class="video" id="video">
             <video width="" height="" controls>
                 <source src="" type="">
                 Your browser does not support the video tag.
             </video>
         </div>
-        <!--Video-->
 
         <!--Overview-->
-        <div id="container-overview">
-            <div></div>
+        <div class="overview" id="container-overview">
+            <div>
+                add features here
+            </div>
             <div></div>
         </div>
-        <!--Overview-->
 
         <!--TechSpecs-->
-        <div id="container-tech-specs">
-            <div></div>
-            <div></div>
+        <div class="tech-specs" id="container-tech-specs">
+            <div>
+                Tech Specs
+            </div>
+            <div>
+                Colors
+                Coral / Champagne Gold Aluminum
+                Porcelain / Silver Aluminum
+                Obsidian / Black Aluminum
+                Dimensions and weight
+                Length: 1.45 in (36.73 mm)
+                Width: 0.91 in (23.09 mm)
+                Height: 0.44 in (11.20 mm)
+                Weight: 0.066 lb (30 g)
+                Battery and power
+                Battery life of up to 7 days. Use of the always-on display and SpO2 features will require more frequent
+                charging. We
+                recommend charging your tracker every few days to ensure you are always tracking.
+
+                Average battery life is approximate and is based on testing conducted in California in mid 2023 on
+                pre-production
+                hardware and software, using default settings with a median Fitbit user battery usage profile across a
+                mix of talk,
+                data, standby, and use of other features. Battery life depends on features enabled, usage, environment
+                and many other
+                factors. Use of certain features will decrease battery life. Actual battery life may be lower.
+
+                Battery type: Lithium-polymer
+                Charge time (0-100%): Two hours
+                Radio transceiver: Bluetooth
+                Memory
+                Saves 7 days of detailed motion data, minute by minute
+                Saves daily totals for the last 30 days
+                Stores heart rate data at 1 second intervals during exercise tracking and at 5 second intervals all
+                other times
+                Environmental requirements
+                Operating temperature: 14° to 113°F
+                Maximum operating altitude: 28,000ft
+                Sensors and components
+                Optical heart rate monitor
+                3-axis accelerometer
+                Built-in GPS + GLONASS
+                Red and infrared sensors for oxygen saturation (SpO2) monitoring. Not available in all countries. Not
+                intended to
+                diagnose or treat any medical condition or for any other medical purpose. Intended to help you manage
+                your well-being
+                and keep track of your information. Requires more frequent charging.
+                Device temperature sensor (skin temperature variation available in the Fitbit app). Only available in
+                the Fitbit app and
+                only displays variation. Not available in all markets. Not intended for medical purposes. Significant
+                changes in ambient
+                temperature may negatively impact skin temperature tracking.
+                Vibration motor
+            </div>
         </div>
-        <!--TechSpecs-->
 
         <!--Form-->
-        <div id="form-buy">
+        <div class="form-buy" id="form-buy">
             <form>
                 <div>
                     <label for="email" id="email-label">Email</label>
@@ -73,7 +123,6 @@
                 <button type="submit" id="submit">Submit</button>
             </form>
         </div>
-        <!--Form-->
 
         <footer>
 
