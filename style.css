@@ -13,6 +13,8 @@ main {
 :root {
   --herosectioncolor: #fdf4eb;
   --navlinkcolor: orangered;
+  --navtextcolor: rgb(41, 43, 44);
+  --bgcsection: rgba(122, 120, 120, 0.493);
   scroll-behavior: smooth;
 }
 
@@ -53,7 +55,7 @@ main {
 
 a {
   text-decoration: none;
-  color: rgb(41, 43, 44);
+  color: var(--navtextcolor);
 }
 
 a:hover {
@@ -82,8 +84,9 @@ a:hover {
   font-size: 2.5em;
 }
 
-.hero-section-img {
-  width: 1200 x 630;
+#hero-section-img {
+  width: 100%;
+  height: auto;
   z-index: 1;
 }
 
@@ -130,17 +133,77 @@ a:hover {
   gap: 5em;
 }
 
+/* Tech Specs */
+
 /* Footer */
 
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-  width: 100vw;
   height: 7%;
   padding: 1em;
 }
 
-@media screen {
+.email-form {
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 25%;
+}
+
+#container-form {
+  display: flex;
+  gap: 1rem;
+}
+
+#email-input {
+  padding: 0.25rem;
+  border-radius: 1rem;
+}
+
+.email-button {
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: var(--navtextcolor);
+  background-color: var(--herosectioncolor);
+}
+
+/* For media query usual changes are orientation (row/column) and font size */
+
+@media screen and (prefers-color-scheme: dark) {
+  .header {
+    background-color: black;
+    color: white;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  .hero-section-text {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 720px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+  }
 }

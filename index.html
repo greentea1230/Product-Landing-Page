@@ -23,7 +23,7 @@
                         <li><a class="nav-link" href="#video">Video</a></li>
                         <li><a class="nav-link" href="#container-overview">Overview</a></li>
                         <li><a class="nav-link" href="#container-tech-specs">Tech Specs</a></li>
-                        <li><a class="nav-link" href="staticpage.html" target="_blank">Buy Now</a></li>
+                        <!-- <li><a class="nav-link" href="staticpage.html" target="_blank">Buy Now</a></li> -->
                     </ul>
                 </nav>
             </section>
@@ -35,7 +35,7 @@
                 <h1 class="hero-section-header-1">Fitbit Charge 6</h1>
                 <span>Run your day and routine.</span>
             </div>
-            <div class="hero-section-img">
+            <div class="container-hero-img">
                 <img id="hero-section-img" src="fitbits w bg.jpeg" alt="Fitbits">
             </div>
         </section>
@@ -54,19 +54,29 @@
             <div class="item2 overview-feature">
                 <span>Heart Rate</span>
             </div>
-            <div class="item3 overview-feature">Workouts</div>
-            <div class="item4 overview-feature">Sleep Tracking</div>
-            <div class="item5 overview-feature">Google</div>
-            <div class="item6 overview-feature">Compatibility</div>
+            <div class="item3 overview-feature">
+                <span>Workouts</span>
+            </div>
+            <div class="item4 overview-feature">
+                <span>Sleep Tracking</span>
+            </div>
+            <div class="item5 overview-feature">
+                <span>Google</span>
+            </div>
+            <div class="item6 overview-feature">
+                <span>Compatibility</span>
+            </div>
         </section>
 
         <!--TechSpecs-->
         <section class="tech-specs" id="container-tech-specs">
-            <div>
+            <div class="ts-item1">
                 Tech Specs
             </div>
-            <div>
-                Colors
+            <div class="ts-item2">
+                <ul>
+
+                </ul>
             </div>
         </section>
 
@@ -84,16 +94,18 @@
         <footer>
             <section class="footer" id="footer">
                 <div>
-                    <h3>SUBSCRIBE NOW</h3>
-                    <p>If you want the latest updates concerning fitbits, please input your email here</p>
+                    <h2>SUBSCRIBE NOW</h3>
+                        <p>If you want the latest updates concerning fitbits, please input your email here</p>
                 </div>
-                <div>
+                <div class="email-form">
                     <form action="staticpage.html" method="get" target="_blank">
-                        <div>
-                            <label for="email" id="email-label">Email</label>
-                            <input type="email" id="email-input" name="email" placeholder="username@email.com">
+                        <div id="container-form">
+                            <div>
+                                <label class="email-label" for="email" id="email-label">Email</label>
+                                <input type="email" id="email-input" name="email" placeholder="username@email.com">
+                            </div>
+                            <button class="email-button" type="submit" id="submit">Submit</button>
                         </div>
-                        <button type="submit" id="submit">Submit</button>
                     </form>
                 </div>
             </section>
