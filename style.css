@@ -122,18 +122,58 @@ a:hover {
   grid-area: compatibility;
 }
 
+.overview-feature {
+  font-size: 1rem;
+}
+
 .overview {
   display: grid;
   grid-template-areas:
     "header header header header header"
     "heartrate workouts sleeptracking google compatibility";
-  background-color: rgba(122, 120, 120, 0.493);
+  background-color: var(--bgcsection);
   place-items: center center;
-  padding: 10em;
+  padding: 5rem;
   gap: 5em;
 }
 
 /* Tech Specs */
+
+.ts-item1 {
+  grid-area: header;
+  font-size: 5em;
+  font-weight: bold;
+  place-items: center center;
+}
+.ts-item2 {
+  grid-area: colors;
+}
+.ts-item3 {
+  grid-area: batteryandpower;
+}
+.ts-item4 {
+  grid-area: memory;
+}
+.ts-item5 {
+  grid-area: components;
+}
+.ts-item6 {
+  grid-area: display;
+}
+
+.spec-item {
+  font-size: 1rem;
+}
+
+.tech-specs {
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "colors batteryandpower memory components display";
+  place-items: center center;
+  padding: 5rem;
+  gap: 5em;
+}
 
 /* Footer */
 
@@ -143,6 +183,7 @@ a:hover {
   justify-content: space-around;
   height: 7%;
   padding: 1em;
+  background-color: var(--bgcsection);
 }
 
 .email-form {
@@ -193,6 +234,35 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overview {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item1 {
+    font-size: 2rem;
+  }
+
+  .tech-specs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ts-item1 {
+    font-size: 2rem;
+  }
+
+  .footer {
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -201,9 +271,26 @@ a:hover {
     flex-direction: column;
   }
 
-  .footer {
-    height: 10%;
+  .yt-vid {
+    width: 3vmin;
+  }
+
+  .overview {
     display: flex;
     flex-direction: column;
+  }
+
+  .tech-specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    height: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
 }
