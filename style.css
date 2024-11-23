@@ -122,18 +122,27 @@ a:hover {
   grid-area: compatibility;
 }
 
+.compatibility-icons {
+  display: flex;
+  flex-direction: row;
+}
+
 .overview-feature {
   font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center center;
 }
 
 .overview {
   display: grid;
   grid-template-areas:
     "header header header header header"
+    "heartrate workouts sleeptracking google compatibility"
     "heartrate workouts sleeptracking google compatibility";
   background-color: var(--bgcsection);
   place-items: center center;
-  padding: 5rem;
+  padding: 8rem;
   gap: 5em;
 }
 
@@ -163,6 +172,9 @@ a:hover {
 
 .spec-item {
   font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center center;
 }
 
 .tech-specs {
@@ -171,7 +183,7 @@ a:hover {
     "header header header header header"
     "colors batteryandpower memory components display";
   place-items: center center;
-  padding: 5rem;
+  padding: 8rem;
   gap: 5em;
 }
 
@@ -181,8 +193,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   height: 7%;
-  padding: 1em;
+  padding: 1rem;
   background-color: var(--bgcsection);
 }
 
@@ -269,15 +282,26 @@ a:hover {
   .hero-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section-header-1 {
+    font-size: 1.6rem;
   }
 
   .yt-vid {
-    width: 3vmin;
+    width: 2vmin;
+    aspect-ratio: 1/2;
   }
 
   .overview {
     display: flex;
     flex-direction: column;
+  }
+
+  .item1 {
+    font-size: 1.6rem;
   }
 
   .tech-specs {
@@ -287,10 +311,16 @@ a:hover {
     align-items: center;
   }
 
+  .ts-item1 {
+    font-size: 1.6rem;
+  }
+
   .footer {
     height: 5%;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
   }
 }
